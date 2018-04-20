@@ -1,0 +1,139 @@
+main {
+
+  min-height: 100vh;
+  margin: auto;
+  line-height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: #333;
+  background: rgb(255, 255, 255);
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  
+}
+
+h1 {
+  margin: 2em 0 2em 0;
+  color: $headingColor;
+}
+
+/*  ----
+flex box
+----   */
+
+#container {
+  /*position: static;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #f00;
+  width: auto;
+  padding: 1px;*/
+  position: static;
+  margin: 0;
+  padding: 10px;
+  flex: auto;
+}
+
+#container > div {
+  /*border: 1px solid #555;
+  flex: auto;
+  margin: 1px;
+  font-size: 20px;
+  line-height:200px;
+  text-align: auto;
+  min-width: 0;
+  text-overflow: ellipsis;*/
+  flex: auto;
+  background: #009cb1;
+  color: white;
+  border: 10px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 250px;
+  resize: horizontal;
+  overflow: auto;
+  width: 500px;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+} 
+
+image {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+/*  
+Nav bar 
+*/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: auto;
+  font-weight: 60;
+  font-size: 15px;
+  order: -1;
+  background: rgb(149, 194, 215);
+}
+
+ul {
+  overflow:hidden;
+  list-style-type: none;
+}
+li {
+  height :25px;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-right-style: none;
+  padding: 1 1x;
+}
+
+footer {
+  padding: 1em;
+  background: rgb(27, 83, 110);
+  text-align: center;
+}
+
+/*image*/
+landscape {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button Styleee
+* 
+*/
+button, button a, .button{
+  position: static;
+  font: 500 14px Arial;
+  letter-spacing: 0.5px;
+  color:#fff !important;
+  border: 0;
+  border-radius: 5px;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+button, .button{
+  min-width: 100px;
+  margin: 10px 5px;
+  padding:8px 10px;
+  background-color: #0092ba;
+  background: linear-gradient(to bottom, #24A1C3 5%, #0092BB 100%) repeat scroll 0 0 #24A1C3;
+}
+
+.button{display:inline-block;min-width:80px;text-align:center;white-space:nowrap;}
+
+button:hover,a.button:hover{
+  background:linear-gradient(to bottom, #0092BB 5%, #24A1C3 100%) repeat scroll 0 0 #0092BB;
+}
+button:active{top:1px;}
